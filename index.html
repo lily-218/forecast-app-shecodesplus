@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-bar" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city" id="city"></h1>
+
+            <p class="weather-data-details">
+              <span id="time"></span>, <span id="description"> </span>
+              <br />
+              Humidity: <strong id="humidity"> </strong>, Wind:
+              <strong id="wind-speed"> </strong>
+            </p>
+          </div>
+          <div class="weather-temp-container">
+            <div id="icon"></div>
+
+            <div class="weather-temp-value" id="temperature"></div>
+            <div class="temp-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by TEST
+        <a href="https://github.com/lily-218" target="_blank"> Lily Schroder</a>
+        and is
+        <a
+          href="https://github.com/lily-218/weatherapp-shecodes-project"
+          target="_blank"
+        >
+          open-sourced on GitHub
+        </a>
+        and
+        <a
+          href="https://weatherapp-shecodesplus-project.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
