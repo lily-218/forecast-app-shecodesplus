@@ -99,9 +99,9 @@ a {
   font-weight: bold;
 }
 .weather-forecast-icon {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 88px;
 }
 .weather-forecast-temps {
   text-align: center;
