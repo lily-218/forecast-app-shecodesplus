@@ -101,7 +101,7 @@ a {
 .weather-forecast-icon {
   display: block;
   margin: 0 auto;
-  width: 88px;
+  width: 80px;
 }
 .weather-forecast-temps {
   text-align: center;
@@ -116,5 +116,5 @@ a {
 }
 
 .temp-low {
-  color: #7ec3cb;
+  color: #81bdc4;
 }
